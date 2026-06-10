@@ -1,0 +1,9 @@
+services:
+  lighttpd_utf8:
+    build: .
+    container_name: lighttpd_utf8_webdav
+    volumes:
+      - /mnt:/www:ro
+    ports:
+      - 8088:80
+    restart: always
